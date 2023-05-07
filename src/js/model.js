@@ -1,4 +1,4 @@
-class FilmModel {
+class FilmeModel {
   constructor() {
     this._titulo;
     this._ano;

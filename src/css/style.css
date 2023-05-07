@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.imagem-carousel {
+  height: 83vh;
+  max-width: 100%;
+  object-fit: fill;
+  object-position: 50% 15%;
+  cursor: pointer;
+}
+
+.card-filmes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 4px;
+  margin: 0 auto;
+  padding: 2%;
+  /* background: #33343c; */
+}
+
+.estrelas {
+  color: black;
+  border: 2px solid yellow;
+  border-radius: 8px;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.filme-poster {
+  width: 250px;
+  height: 350px;
+  cursor: pointer;
+}
+
+.filme-poster:hover {
+  transform: scale(1.1);
+  transition-duration: 0.8s;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+}
