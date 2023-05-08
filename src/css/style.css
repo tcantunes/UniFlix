@@ -6,6 +6,42 @@
   list-style: none;
 }
 
+body {
+  background-color: #f2b03f;
+}
+
+.navbar {
+  background-color: #d64b34 !important;
+}
+
+.logo{
+  color: #e8d4b9 !important;
+  font-size: 30px;
+  font-family: 'Monoton', cursive;
+}
+
+.lista{
+  color: #e8d4b9 !important;
+  font-family: 'Righteous', cursive;
+  font-size: 20px;
+}
+
+.lista:hover{
+  color:#702c37 !important;
+  transition: 0.2s;
+}
+
+.botao {
+  border: 2px solid #e8d4b9;
+  color: #e8d4b9;
+  font-family: 'Righteous', cursive;
+}
+
+.botao:hover {
+  background-color: #702c37;
+  border: 2px solid #702c37;
+}
+
 .imagem-carousel {
   height: 83vh;
   max-width: 100%;
@@ -17,33 +53,70 @@
 .card-filmes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 4px;
+  gap: 30px 20px;
   margin: 0 auto;
   padding: 2%;
   /* background: #33343c; */
 }
 
-.estrelas {
+/* .estrelas {
   color: black;
   border: 2px solid yellow;
   border-radius: 8px;
   padding: 5px;
   font-size: 15px;
+} */
+
+
+
+
+
+.filmes-container{
+  /* border: 3px double #d64b34; */
+  border: 3px inset #d64b34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
 }
 
 .filme-poster {
   width: 250px;
   height: 350px;
   cursor: pointer;
+  margin-bottom: 12px;
+  border: 2px solid #e8d4b9;
+  /* margin-top: 60px; */
 }
 
-.filme-poster:hover {
+/* .filme-poster:hover {
   transform: scale(1.1);
   transition-duration: 0.8s;
+} */
+
+.filmes-container:hover{
+  border: 3px solid #e8d4b9;
+  transition: 0.2s;
 }
 
+.titulo-av{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 250px;
+}
 .titulo {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
-  margin-top: 50px;
+  font-family: 'Bebas Neue', cursive;
+  
+}
+
+.estrelas{
+  font-size: 16px;
+  font-family: 'Righteous', cursive;
+}
+
+.estrelas span{
+  font-size: 19px;
 }

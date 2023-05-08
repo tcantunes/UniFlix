@@ -6,8 +6,8 @@ class View {
   update(model) {
     this.container.innerHTML += `
         <div class="filmes-container">
-        <p class="titulo">${model.titulo} <span class="estrelas">⭐${model.avaliacoes[0].Value}</span></p>
          <img class="filme-poster" src=${model.poster} onclick= "FilmeController.pesquisaPelaImagem('${model.titulo}')">
+         <div class="titulo-av"> <p class="titulo">${model.titulo}</p> <p class="estrelas"><span>★</span>${model.avaliacoes[0].Value}</p></div>
          </div> 
          `;
   }
