@@ -5,7 +5,6 @@ class FilmeController {
       "Joker",
       "City by the Sea",
       "Les Misérables",
-      "Ferris Bueler’s Day Off",
       "Gone Girl",
       "Twilight",
       "Home Alone",
@@ -17,7 +16,7 @@ class FilmeController {
       "Despicable Me",
       "Enemy At The Gates",
       "Final Destination",
-      "Ferris Bueller’s Day Off",
+      "Epic Movie"
     ];
     for (let filme of filmes) {
       let model = new FilmeModel();
@@ -29,7 +28,10 @@ class FilmeController {
   }
 
   static encaminhaPesquisa() {
-    localStorage.setItem("filmePaginaPesquisa", document.getElementById("pesquisa").value);
+    localStorage.setItem(
+      "filmePaginaPesquisa",
+      document.getElementById("pesquisa").value
+    );
     location.href = "./src/paginas/pesquisa.html";
   }
 
@@ -42,14 +44,17 @@ class FilmeController {
   }
 
   static botaoPesquisa() {
-    localStorage.setItem("filmePaginaPesquisa", document.getElementById("pesquisa").value);
+    localStorage.setItem(
+      "filmePaginaPesquisa",
+      document.getElementById("pesquisa").value
+    );
     location.href = "pesquisa.html";
   }
 
-  static pesquisaPelaImagem(filme){
-    localStorage.setItem('filmePaginaPesquisa', filme);
-    location.href="./src/paginas/pesquisa.html";
-}
+  static pesquisaPelaImagem(filme) {
+    localStorage.setItem("filmePaginaPesquisa", filme);
+    location.href = "./src/paginas/pesquisa.html";
+  }
 }
 document.querySelector("#formBarra").addEventListener("submit", (event) => {
   event.preventDefault();
