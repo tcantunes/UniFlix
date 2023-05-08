@@ -14,6 +14,7 @@
     <title>UniFlix</title>
   </head>
   <body>
+    <!-- Iniciamos aqui com a navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">Navbar</a>
       <button
@@ -39,14 +40,19 @@
             <a class="nav-link" href="#">Link</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <form class="form-inline my-2 my-lg-0" id="formBarra">
           <input
             class="form-control mr-sm-2"
             type="search"
             placeholder="Pesquisar"
             aria-label="Pesquisar"
+            id="pesquisa"
           />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <button
+            class="btn btn-outline-success my-2 my-sm-0"
+            type="submit"
+            onclick="FilmeController.encaminhaPesquisa()"
+          >
             Pesquisar
           </button>
         </form>

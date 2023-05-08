@@ -83,7 +83,6 @@ class FilmeModel {
         this._premios = response.Awards;
         this._posterUrl = response.Poster;
         this._avaliacoes = response.Ratings;
-        this._orcamento = response.BoxOffice;
         callback();
       } else if (request.status == 404) {
         console.log(`O filme procurado não foi encontrado ${request.status}`);

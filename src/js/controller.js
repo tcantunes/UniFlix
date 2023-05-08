@@ -27,4 +27,30 @@ class FilmeController {
       });
     }
   }
+
+  static encaminhaPesquisa() {
+    localStorage.setItem("filmePaginaPesquisa", document.getElementById("pesquisa").value);
+    location.href = "./src/paginas/pesquisa.html";
+  }
+
+  static barraPesquisa() {
+    let model = new FilmeModel();
+    model.requisicao(localStorage.getItem("filmePaginaPesquisa"), () => {
+      let view = new View();
+      view.atualizaPesquisa(model);
+    });
+  }
+
+  static botaoPesquisa() {
+    localStorage.setItem("filmePaginaPesquisa", document.getElementById("pesquisa").value);
+    location.href = "pesquisa.html";
+  }
+
+  static pesquisaPelaImagem(filme){
+    localStorage.setItem('filmePaginaPesquisa', filme);
+    location.href="./src/paginas/pesquisa.html";
 }
+}
+document.querySelector("#formBarra").addEventListener("submit", (event) => {
+  event.preventDefault();
+});
