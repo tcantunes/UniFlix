@@ -15,11 +15,14 @@ class View {
   atualizaPesquisa(model) {
     try {
       if (model.titulo === undefined)
-        throw `<img class="imagem-de-erro" src=../../../ResiliaFlix-2.0/img/404.jpg>`;
+        throw `<img class="imagem-de-erro" src=../img/error-404-1.png>`;
+      
+      // if (model.poster === "N/A")
+      //   throw `<img class="imagem-de-erro" src=../img/error-404-1.png>`;
 
       let avaliacoes = ``;
       if (model.avaliacoes.length == 1) {
-        avaliacoes = `<p class="infos"><span>IMDB:</span> ${model.avaliacoes[0].Value}</p>`;
+        avaliacoes = `<p class="infos"><span><span>★</span></span> ${model.avaliacoes[0].Value}</p>`;
       }
       if (model.avaliacoes.length == 2) {
         avaliacoes = `
@@ -36,20 +39,22 @@ class View {
       this.paginaPesquisa.innerHTML = `
 
     <div class="grid-container">
+    <div class="titulo-filme">
+    <p class="infos"><span></span> ${model.titulo}</p>
+    </div>
+    <div class="primeiro-container">
     <picture>
     <img class="poster" src=${model.poster} alt="Imagem não encontrada">
     </picture>
-    <div class="primeiro-container">
-    <p class="infos"><span>Filme:</span> ${model.titulo}</p>
+    <p class="infos sino"><span></span> ${model.sinopse}</p>
+    </div>
+    <div class="segundo-container">
     <p class="infos"><span>Data de lançamento:</span> ${model.lancamento}</p>
     <p class="infos"><span>Duração:</span> ${model.duracao}</p>
     <p class="infos"><span>Gênero:</span> ${model.genero}</p>
     <p class="infos"><span>Diretor:</span> ${model.diretor}</p>
     <p class="infos"><span>Roteirista:</span> ${model.roteirista}</p>
     <p class="infos"><span>Atores:</span> ${model.atores}</p>
-    </div>
-    <div class="segundo-container">
-    <p class="infos"><span>Sinopse:</span> ${model.sinopse}</p>
     <p class="infos"><span>Idioma:</span> ${model.idioma}</p>
     <p class="infos"><span>País:</span> ${model.pais}</p>
     <p class="infos"><span>Prêmios:</span> ${model.premios}</p>

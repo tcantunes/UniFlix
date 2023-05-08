@@ -14,27 +14,27 @@ body {
   background-color: #d64b34 !important;
 }
 
-.logo{
+.logo {
   color: #e8d4b9 !important;
   font-size: 30px;
-  font-family: 'Monoton', cursive;
+  font-family: "Monoton", cursive;
 }
 
-.lista{
+.lista {
   color: #e8d4b9 !important;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
   font-size: 20px;
 }
 
-.lista:hover{
-  color:#702c37 !important;
+.lista:hover {
+  color: #702c37 !important;
   transition: 0.2s;
 }
 
 .botao {
   border: 2px solid #e8d4b9;
   color: #e8d4b9;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
 }
 
 .botao:hover {
@@ -43,7 +43,7 @@ body {
 }
 
 .imagem-carousel {
-  height: 83vh;
+  height: 90vh;
   max-width: 100%;
   object-fit: fill;
   object-position: 50% 15%;
@@ -67,11 +67,7 @@ body {
   font-size: 15px;
 } */
 
-
-
-
-
-.filmes-container{
+.filmes-container {
   /* border: 3px double #d64b34; */
   border: 3px inset #d64b34;
   display: flex;
@@ -94,12 +90,12 @@ body {
   transition-duration: 0.8s;
 } */
 
-.filmes-container:hover{
+.filmes-container:hover {
   border: 3px solid #e8d4b9;
   transition: 0.2s;
 }
 
-.titulo-av{
+.titulo-av {
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
@@ -108,15 +104,23 @@ body {
 .titulo {
   font-size: 22px;
   font-weight: bold;
-  font-family: 'Bebas Neue', cursive;
-  
+  font-family: "Bebas Neue", cursive;
 }
 
-.estrelas{
+.estrelas {
   font-size: 16px;
-  font-family: 'Righteous', cursive;
+  font-family: "Righteous", cursive;
 }
 
-.estrelas span{
+.estrelas span {
   font-size: 19px;
+}
+
+.footer {
+  background: #d64b34;
+  color: white;
+}
+
+.copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }

@@ -33,3 +33,47 @@ body {
   background-color: #702c37;
   border: 2px solid #702c37;
 }
+
+.grid-container{
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.titulo-filme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  width: 30%;
+  font-family: "Righteous", cursive;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.primeiro-container{
+  text-align: center;
+  width: 25%;
+}
+
+.sino{
+  margin-top: 15px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.segundo-container{
+  font-family: "Bebas Neue", cursive;
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.imagem-de-erro {
+  display: flex;
+  margin: 0 auto;
+  padding-top: 40px;
+}
