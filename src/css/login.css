@@ -58,3 +58,12 @@ h1 {
   background-color: #d64b34;
   border-color: #fff;
 }
+
+.mensagemError {
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  padding: 15px;
+  border-radius: 5px;
+  display: none;
+}
