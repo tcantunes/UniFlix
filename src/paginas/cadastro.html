@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/cadastro.css" />
+    <title>VassoFlix</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand logo" href="../../index.html">VASSOFLIX</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado"
+        aria-expanded="false"
+        aria-label="Alterna navegação"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link lista" href="../../index.html"
+              >HOME <span class="sr-only">(página atual)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link lista" href="#">LINK</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" id="formBarra">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Pesquisar"
+            aria-label="Pesquisar"
+            id="pesquisa"
+          />
+          <button
+            class="btn btn-outline-success my-2 my-sm-0 botao"
+            type="submit"
+            onclick="FilmeController.botaoPesquisa()"
+          >
+            Pesquisar
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- Container do formulário de cadastro -->
+    <div class="formulario">
+      <form class="container-formulario">
+        <h1>CADASTRE-SE</h1>
+        <p>
+          Realize seu cadastro e tenha acesso a informações dos seus filmes
+          favoritos!
+        </p>
+        <img class="imagem-cadastro" src="../img/cadastro.png" alt="cadastro" />
+        <div class="mensagemError"></div>
+        <div class="mensagemSucesso"></div>
+        <div class="form-group">
+          <label for="inputName1" id="labelNome">Nome</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputName1"
+            placeholder="Seu nome"
+          />
+        </div>
+        <div class="form-group">
+          <label for="inputEmail1" id="labelEmail">Endereço de email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Seu email"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >Nunca vamos compartilhar seu email, com ninguém.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="inputPassword1" id="labelPassword">Senha</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword1"
+            placeholder="Senha"
+          />
+        </div>
+        <div class="form-group">
+          <label for="confirmaInputPassword1" id="labelConfirmaPassword"
+            >Confirme senha</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="confirmaInputPassword1"
+            placeholder="Confirme Senha"
+          />
+        </div>
+        <button onclick="cadastrar()" class="btn btn-primary botao-form">
+          Enviar
+        </button>
+      </form>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/model.js"></script>
+    <script src="../js/controller.js"></script>
+    <script src="../js/view.js"></script>
+    <script src="../js/cadastrar.js"></script>
+    <script>
+      FilmeController.barraPesquisa();
+    </script>
+  </body>
+</html>

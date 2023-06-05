@@ -1,0 +1,93 @@
+body {
+  background-color: #f2b03f;
+}
+
+.navbar {
+  background-color: #d64b34 !important;
+  margin-bottom: 45px;
+}
+
+.logo {
+  color: #e8d4b9 !important;
+  font-size: 30px;
+  font-family: "Monoton", cursive;
+}
+
+.lista {
+  color: #e8d4b9 !important;
+  font-family: "Righteous", cursive;
+  font-size: 20px;
+}
+
+.lista:hover {
+  color: #702c37 !important;
+  transition: 0.2s;
+}
+
+.botao {
+  border: 2px solid #e8d4b9;
+  color: #e8d4b9;
+  font-family: "Righteous", cursive;
+}
+
+.botao:hover {
+  background-color: #702c37;
+  border: 2px solid #702c37;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mensagemError {
+  text-align: center;
+  color: #fff;
+  background-color: red;
+  padding: 15px;
+  border-radius: 5px;
+  display: none;
+}
+
+.mensagemSucesso {
+  text-align: center;
+  color: #fff;
+  background-color: green;
+  padding: 15px;
+  border-radius: 5px;
+  display: none;
+}
+
+.imagem-cadastro {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.container-formulario {
+  background-color: #fff;
+  width: 500px;
+  padding: 10px;
+  border-radius: 3%;
+}
+
+h1 {
+  font-family: "Monoton", cursive;
+  color: #702c37;
+}
+
+p {
+  color: gray;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+.botao-form {
+  background-color: #d64b34;
+  border-color: #fff;
+}
