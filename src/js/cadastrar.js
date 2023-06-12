@@ -32,9 +32,12 @@ nome.addEventListener("keyup", () => {
 });
 
 email.addEventListener("keyup", () => {
-  if (email.value.length <= 2) {
+  var er = new RegExp(
+    /^[A-Za-z0-9_\-\.]+@[A-Za-z0-9_\-\.]{2,}\.[A-Za-z0-9]{2,}(\.[A-Za-z0-9])?/
+  );
+  if (email.value == '' || !er.test(email.value)) {
     labelEmail.setAttribute("style", "color: red");
-    labelEmail.innerHTML = "<strong>Insira no mínimo 3 caracteres</strong>";
+    labelEmail.innerHTML = "<strong>Formato de email incorreto</strong>";
     email.setAttribute("style", "border-color: red");
     validaEmail = false;
   } else {
